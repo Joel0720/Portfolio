@@ -1,0 +1,377 @@
+/* Section 1.1-topPage navbar*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+.Intro h2 {
+    color:white;
+}
+span {
+    color: teal;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 8px;
+}
+
+li {
+    display: inline-block;
+    list-style:none;
+    margin: 10px 40px;
+}
+
+ul li a {
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 4px;
+}
+
+ ul li a:hover {
+    background-color: teal;
+    border-radius: 2px;
+}
+
+/* Section 1.2-topPage self-image & coding languages images*/
+.Intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+img {
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.languages {
+    font-family: 'Poppins', sans-serif;
+    margin: 50px 0;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.lan1, .lan2, .lan3, .lan4, .lan5 {
+    display: flex;
+    flex-direction: row;
+   
+}
+.fa-brands:hover {
+    color: teal;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+/* About me */
+
+#about-me {
+    padding: 80px 130px ;
+}
+
+h2 {
+    padding-bottom: 16px;
+    color: teal;
+}
+
+.aboutMe-content {
+    display: flex;
+    justify-content: space-between;
+}
+.para {
+    flex-basis: 45%;
+    border-style: solid;
+    border-color: teal;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.tab-titles {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.tab-titles p {
+    padding: 0 40px;
+}
+
+.tab-links {
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: teal;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width:100%;
+}
+
+.tab-contents ul {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul span {
+    font-size: 16px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/* Projects */
+
+#projects {
+    padding: 130px ;
+}
+.project-title {
+    padding-bottom: 70px;
+}
+
+#projects-3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Project connect 4 */
+
+#projects-3 div.connect4 {
+    background:#262626;
+    padding: 32px 50px;
+    font-size: 32px;
+    border-radius: 4px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+
+#projects-3 div.connect4:hover{
+    background:blue;
+    transform: translateY(-10px);
+    .circle-1 {
+        color:yellow;
+    }
+    .circle-2 {
+        color: red;
+    }
+    
+}
+
+.connect4 div a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.connect4-link a:hover {
+    color: greenyellow;
+    background-color: none;
+    text-decoration: none;
+}
+
+/* Project tic tac toe */
+
+#projects-3 div.tic-tac-toe{
+    background:#262626;
+    padding: 32px 40px;
+    font-size: 32px;
+    border-radius: 4px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+#projects-3 div.tic-tac-toe:hover{
+    background:#FF2E63;
+    transform: translateY(-10px);
+    .fa-x, .fa-o {
+        color: #08D9D6;
+    } 
+}
+
+.tic-tac-toe-link a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.tic-tac-toe-link a:hover {
+    color: #08D9D6;
+    background-color: none;
+    text-decoration: none;
+}
+
+/* Project Calculator */
+
+#projects-3 div.calculator{
+    background:#262626;
+    padding: 32px 50px;
+    font-size: 30px;
+    border-radius: 4px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+#projects-3 div.calculator:hover{
+    background:purple;
+    transform: translateY(-10px);
+    .fa-calculator {
+        color: orange;
+    } 
+}
+
+.calculator-link a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.calculator-link a:hover {
+    color: orange;
+    background-color: none;
+    text-decoration: none;
+}
+
+/* Contact Info */
+
+.contact-info div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+#contact {
+    padding: 130px ;
+    font-size: 20px;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-message {
+    margin: 0;
+    padding: 50px;
+    box-sizing: border-box;
+    background: #262626;
+    border-radius: 4px;
+    
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px
+}
+
+.contact-left-title h4 {
+    font-weight: 600;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: teal;
+    border-radius: 10px;
+}
+
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 8px;
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 8px;
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+
+.contact-left button:hover {
+    background-color: teal;
+    border: none;
+}
+
+.contact-inputs:focus {
+    border: 4px solid teal;
+}
+
+.contact-inputs::placeholder {
+    color: grey;
+}
+
+.linkedin a {
+    text-decoration: none;
+} 
+
+
+.linkedin a p:hover {
+    color:teal;
+} 
+
+.CV-download a {
+    text-decoration: none;
+    background-color: white;
+    border-radius: 4px;
+    padding: 4px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.CV-download a p {
+    color:black;
+}
+
+.CV-download a:hover {
+    background-color: teal;
+}

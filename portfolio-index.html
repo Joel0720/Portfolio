@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfilio</title>
+    <link rel="stylesheet" href="portfolio-style.css">
+    <script defer src="portfolio-script.js"></script>
+    <script src="https://kit.fontawesome.com/e8ce2a8bd4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <!-- Section 1 Navbar, picture of me and coding languages logos-->
+        <nav>
+            <h1><span class="name">J.</span>Portfolio</h1>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>  
+        </nav>
+        <div class="Intro">
+            <div>
+                <img src="Files-Images/Image of me.jpg">
+                <p class="name"><span>Web Developer</span></p>
+                <h2>Hi, I'm Joel Mitchell from London.</h2>
+            </div>
+            <div class="languages">
+                <div class="lan1">
+                    <a href="https://www.w3schools.com/html/html_intro.asp" target="blank"><i class="fa-brands fa-html5"></i></a>
+                    <h3>HTML</h3>
+                </div>
+                <div class="lan2">
+                    <a href="https://www.w3schools.com/css/css_intro.asp" target="blank"><i class="fa-brands fa-css3-alt"></i></a>
+                    <h3>CSS</h3>
+                </div>
+                <div class="lan3">
+                    <a href="https://www.w3schools.com/js/js_intro.asp" target="blank"><i class="fa-brands fa-js"></i></a>
+                    <h3>Javascript</h3>
+                </div>
+                <div class="lan4">
+                    <a href="https://www.w3schools.com/python/python_intro.asp" target="blank"><i class="fa-brands fa-python"></i></a>
+                    <h3>Python</h3>
+                </div>
+                <div class="lan5">
+                    <a href="https://www.w3schools.com/java/java_intro.asp" target="blank"><i class="fa-brands fa-java"></i></a>
+                    <h3>Java</h3>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <div id="about-me">
+            <h2 class="aboutMe-title">About Me</h2>
+            <div class="aboutMe-content">
+                <div class="para">
+                    <p>
+                        Hi, my name is Joel Mitchell from London. What sparked my interest in programming was 
+                        when I undertook two modules whilst at university. Introduction to Computer Programming 
+                        (with Python) allowed me to gain a basic understanding of how to write and structure code efficiently.
+                        Whilst completing a project in Numerical Computing with C and C++ deepen my knowledge of programming. 
+                        This led me to applying for the software Development bootcamp with Just IT.
+                    </p>
+                </div>
+
+                <div id="main-tab">
+                    <div class="tab-titles">
+                        <p class="tab-links  active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>HTML<br>CSS<br>JavaScript<br>Python</li>
+                            <li><span>Microsoft</span><br>Excel<br>PowerPoint<br>Word</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Just IT Software Development Bootcamp</span><br>Designing Websites<br>Working calculator</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Queen Mary University 2018-2021</span><br>First Class Degree Mathematics</li>
+                            <li><span>City & Islington Sixth Form 2016-2018</span><br>A* Mathematics<br> A Further Mathematics<br> B Physics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projects">
+            <h2 class="project-title">Projects</h2>
+
+            <div id="projects-3">
+                <div class="connect4">
+                    <i class="fa-solid fa-circle circle-1"></i>
+                    <i class="fa-solid fa-circle circle-2"></i>
+                    <h4>Connect 4</h4>
+                    <h6>Languages:</h6>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-js"></i>
+                    <div class="connect4-link">
+                        <a href="Connect 4/connect4-index.html" target="blank">Click here to play!</a>
+                    </div>
+                </div>
+
+                <div class="tic-tac-toe">
+                    <i class="fa-solid fa-x"></i>
+                    <i class="fa-solid fa-o"></i>
+                    <h4>Tic Tac Toe</h4>
+                    <h6>Languages:</h6>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-js"></i>
+                    <div class="tic-tac-toe-link">
+                        <a href="Tic Tac Toe/TTT-index.html" target="blank">Click here to play!</a>
+                    </div>
+                </div>
+
+                <div class="calculator">
+                    <i class="fa-solid fa-calculator"></i>
+                    <h4>Calculator</h4>
+                    <h6>Languages:</h6>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <div class="calculator-link">
+                        <a href="Calculator/calculator-index.html" target="blank">Click here to experiment!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="contact">
+            <h2 class="contact-title">Contact Information</h2>
+            
+            <div class="contact-section">
+                <div class="contact-info">
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>joelmitchell.dev@gmail.com</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>07365 518566</p>
+                    </div>
+                    <div class="linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/joel-mitchell-a2806b329/" target="blank"><p>LinkedIn Profile</p></a>
+                    </div>
+                    <div class="CV-download">
+                        <i class="fa-solid fa-download"></i>
+                        <a href="/Portfolio/Files-Images/Joel Mitchell CV.docx" download class="download"><p>Download CV</p></a>
+                    </div>
+                </div>
+    
+                <div class="contact-message">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                        <div class="contact-left-title">
+                            <h4>Get in touch</h4>
+                            <hr>
+                        </div>
+                        <input type="hidden" name="access_key" value="cc96ee8a-6eb1-4642-b76b-ac0e4cdaeece">
+                        <input type="text" name="name" placeholder="Your full name" class="contact-inputs" required> 
+                        <input type="email" name="email" placeholder="Your email" class="contact-inputs" required>
+                        <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                        <button type="submit">Submit <i class="fa-solid fa-arrow-right"></i></button> 
+                    </form>
+                    <div contact-right>
+
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </footer>
+</body>
+</html>
