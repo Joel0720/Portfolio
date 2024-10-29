@@ -1,13 +1,12 @@
 /* Section 1.1-topPage navbar*/
-html {
-    scroll-behavior: smooth;
-}
+
 *{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     color: white;
+    scroll-behavior: smooth;
 }
 
 body {
